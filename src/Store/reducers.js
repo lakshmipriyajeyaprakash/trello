@@ -1,0 +1,39 @@
+const initialState = {
+    formValues: JSON.parse(localStorage.getItem("formValues")) || {
+      boardtitle: "",
+      visibility: "",
+    },
+    background:
+      JSON.parse(localStorage.getItem("background")) ||
+      "url(https://images.unsplash.com/photo-1704732510471-5a99789c6123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDY2fDB8MXxjb2xsZWN0aW9ufDF8MzE3MDk5fHx8fHwyfHwxNzA0OTAzNjA3fA&ixlib=rb-4.0.3&q=80&w=400)",
+    displayColor: JSON.parse(localStorage.getItem("displayColor")) || "",
+  };
+  
+  const appReducer = (state = initialState, action) => {
+    switch (action.type) {
+      case "SET_FORM_VALUES":
+        const updatedFormValues = {
+          ...state.formValues,
+          [action.payload.name]: action.payload.value,
+        };
+        localStorage.setItem("formValues", JSON.stringify(updatedFormValues));
+        return {
+          ...state,
+          formValues: updatedFormValues,
+        };
+  
+      case "SET_BACKGROUND":
+        localStorage.setItem("background", JSON.stringify(action.payload));
+        return { ...state, background: action.payload };
+  
+      case "SET_DISPLAY_COLOR":
+        localStorage.setItem("displayColor", JSON.stringify(action.payload));
+        return { ...state, displayColor: action.payload };
+  
+      default:
+        return state;
+    }
+  };
+  
+  export default appReducer;
+  

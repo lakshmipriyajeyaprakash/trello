@@ -1,0 +1,2827 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Noto Sans", Ubuntu, "Droid Sans", "Helvetica Neue", sans-serif;
+  text-size-adjust: 100%;
+}
+.borderImage {
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+}
+.fontfamily {
+  font-stretch: 100%;
+  font-style: normal;
+  font-variant-alternates: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-position: normal;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+}
+.trellocontainer {
+  background-color: rgb(205, 90, 145);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 695.2px;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.trellospacingouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 695.2px;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.trellosurface {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  height: 695.2px;
+  line-height: 20px;
+}
+.headerouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  line-height: 20px;
+  max-height: 48px;
+  min-height: 48px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+.navheaderdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  line-height: 20px;
+  width: 100%;
+}
+.navbutton {
+  width: 32px;
+}
+.navbar {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.16);
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.16);
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  line-height: 20px;
+  max-height: 48px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 8px;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  transition-timing-function: ease;
+  width: 100%;
+}
+.menuimgdivouter {
+  align-items: center;
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  height: 20px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 14px;
+  margin: 0px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: 32px;
+  word-spacing: 0px;
+}
+.menuimgdiv {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  height: 20px;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: 20px;
+  word-spacing: 0px;
+}
+.anchordiv {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  color: rgb(12, 102, 228);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  margin-top: 0px;
+  padding: 0px 8px 0px 8px;
+  position: relative;
+  text-decoration-color: rgb(12, 102, 228);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  width: 75px;
+}
+.logoouterdiv {
+  color: rgb(12, 102, 228);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  text-size-adjust: 100%;
+}
+.logoinnerdiv {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 16px;
+  line-height: 14px;
+  width: 25px;
+  padding-top: 5px;
+}
+/*.logodiv {
+  background-image: url(https://trello.com/assets/87e1af7….gif);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: rgb(12, 102, 228);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  width: 75px;
+}*/
+.title {
+  font-family: "Lobster", sans-serif;
+  color: whitesmoke;
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  filter: none;
+  font-size: 20px;
+  font-weight: 400;
+  height: 16px;
+  line-height: 20px;
+  margin: 0px;
+  opacity: 1;
+  padding: 8px 0px 8px 0px;
+  position: relative;
+  width: 50px;
+}
+/* Body Container Styles */
+.maincontainer {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  line-height: 20px;
+  outline: 0px none rgb(23, 43, 77);
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+}
+.maincontaineralignouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  line-height: 20px;
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+}
+.menunavouter {
+  box-shadow: rgba(255, 255, 255, 0.16) 1px 0px 0px 0px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  line-height: 20px;
+  min-height: 100%;
+  position: relative;
+  width: 260px;
+  z-index: 5;
+}
+.menunavitemsouterdiv {
+  bottom: 0px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  left: 0px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: transform;
+  transition-timing-function: ease-in;
+  width: 260px;
+}
+.menunavitemsinnerdiv {
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.16);
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  line-height: 20px;
+  min-height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+  transition-property: background-color;
+  transition-timing-function: ease;
+  width: 260px;
+}
+.menunavbar {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  line-height: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+  width: 260px;
+}
+.trelloworkspaceouter {
+  align-items: center;
+  border: 0.666667px solid rgba(255, 255, 255, 0.16);
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 20px;
+  min-height: 40px;
+  padding: 8px 12px 12px 8px;
+  width: 236px;
+}
+.menuanchor {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  width: 32px;
+}
+.Touterdiv {
+  align-items: center;
+  background-color: rgba(9, 30, 66, 0.06);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 32px;
+}
+.Tdiv {
+  align-items: center;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(rgb(120, 0, 255), rgb(204, 204, 205));
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  height: 32px;
+  justify-content: center;
+  line-height: 20px;
+  width: 32px;
+}
+.Ttitleouterdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex: 1 1 0%;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 20px;
+  margin: 0px 8px 0px 4px;
+  text-align: left;
+  width: 160px;
+}
+.Ttextspan {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-wrap: wrap;
+  white-space-collapse: preserve;
+  width: 160px;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.Trelloworkspaceanchor {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: 20px;
+  text-align: left;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-wrap: wrap;
+  white-space-collapse: preserve;
+  width: auto;
+  word-break: break-word;
+}
+.Trelloworkspacecontent {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  height: auto;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  text-align: left;
+  text-wrap: wrap;
+  white-space-collapse: preserve;
+  width: auto;
+  word-break: break-word;
+  padding: 2px 0px 0px 0px;
+}
+.usagetype {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  width: 160px;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.menuoptiondiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex: 1 1 0%;
+  font-size: 14px;
+  font-weight: 400;
+  height: 398px;
+  line-height: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 260px;
+}
+.boardlistoptiondivouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 96px;
+  line-height: 20px;
+  padding-top: 12px;
+  width: 260px;
+}
+.boardlistoptiondivinner {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 96px;
+  line-height: 20px;
+  padding-top: 12px;
+  width: 260px;
+}
+.boardanchor {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(12, 102, 228);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  padding-left: 16px;
+  text-decoration-color: rgb(12, 102, 228);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-size-adjust: 100%;
+  width: 244px;
+}
+.boardiconouterdiv {
+  color: rgb(12, 102, 228);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 16px;
+  line-height: 14px;
+  width: 16px;
+}
+.boardicondiv {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 16px;
+  line-height: 14px;
+  width: 16px;
+}
+.boardtext {
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin: 0px 12px 0px 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 12px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: 42.4062px;
+  padding: 5px 0px 0px 0px;
+}
+/* Content Box Div for Added Board */
+.contentboxdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-basis: 1 1 0%;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  height: 511.333px;
+  line-height: 20px;
+  overflow-y: auto;
+  width: 526px;
+}
+/* Workspace tile Styles */
+.workspacetilediv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 325.365px;
+  line-height: 20px;
+  width: 518.354px;
+}
+.workspaceheader {
+  align-items: center;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: flex;
+  flex: 1 1 0%;
+  font-size: 16px;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  margin-block: 20px;
+  margin: 20px 0px 0px 20px;
+  margin-inline: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: 518.354px;
+}
+.workspaceitemsdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 400px;
+  line-height: 20px;
+  max-width: 1266px;
+  padding: 0px 0px 20px 0px;
+  width: 452.354px;
+}
+/*.workspacemenudiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+  height: 176px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 452.354px;
+}*/
+.addboardinfodiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 224px;
+  line-height: 20px;
+  width: 452.354px;
+}
+.workspacecreateboard {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+  height: 224px;
+  justify-content: flex-start;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-block: 0px;
+  margin: 0px;
+  margin-inline: 0px;
+  padding: 0px;
+  padding-inline-start: 0px;
+  width: 452.354px;
+}
+.createboardtile {
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: list-item;
+  font-size: 14px;
+  font-weight: 400;
+  height: 96px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px 0px 8px 8px;
+  padding: 0px;
+  position: relative;
+  text-align: left;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 222.177px;
+}
+.boardadddiv {
+  background-color: rgba(9, 30, 66, 0.06);
+  background-position: 50%;
+  background-size: cover;
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 3px;
+  box-shadow: none;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: table-cell;
+  font-size: 14px;
+  font-weight: 400;
+  height: 80px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-right: 0px;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(23, 43, 77);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  vertical-align: middle;
+  width: 206.177px;
+}
+/* Board Modal Styles */
+.boardmodal {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 0px;
+  line-height: 20px;
+  /*width: 720px;*/
+}
+.boardmodal-content {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 0px;
+  line-height: 20px;
+  width: 0px;
+  z-index: 1;
+}
+.boardmodaldivouter {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  bottom: 4.33333px;
+  box-shadow: rgba(9, 30, 66, 0.15) 0px 8px 12px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 500px;
+  left: 173px;
+  /*left: 412px;*/
+  line-height: 20px;
+  outline: 0px none rgb(23, 43, 77);
+  overflow: hidden;
+  position: fixed;
+  right: 4px;
+  /*top: 52px;*/
+  /*top: 76px;*/
+  top: 5px;
+  width: 304px;
+}
+.modalheaderdiv {
+  align-items: center;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: grid;
+  font-size: 14px;
+  font-weight: 400;
+  grid-template-columns: 32px 224px 32px;
+  height: 40px;
+  line-height: 20px;
+  padding: 4px 8px 4px 8px;
+  position: relative;
+  text-align: center;
+  width: 288px;
+}
+.createheader {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  grid-column: 3/1;
+  grid-row: auto/1;
+  height: 40px;
+  letter-spacing: -0.042px;
+  line-height: 40px;
+  margin-block: 0px;
+  margin: 0px;
+  margin-inline: 0px;
+  overflow: hidden;
+  padding: 0px 32px 0px 32px;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: 224px;
+}
+.closemodalbutton {
+  width: 32px;
+}
+.closesymbolspan {
+  color: rgb(98, 111, 134);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  width: 16px;
+  word-spacing: 0px;
+}
+.modalbodyouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 443px;
+  line-height: 20px;
+  max-height: 443px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0px 12px 12px 12px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 285px;
+}
+.boardstructurediv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 120px;
+  justify-content: center;
+  line-height: 20px;
+  padding-bottom: 8px;
+  width: 272px;
+}
+.boarditemsstructurediv {
+  align-items: center;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgb(0, 121, 191);
+  background-image: url(https://images.unsplash.com/photo-1704732510471-5a99789c6123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MDY2fDB8MXxjb2xsZWN0aW9ufDF8MzE3MDk5fHx8fHwyfHwxNzA0OTAzNjA3fA&ixlib=rb-4.0.3&q=80&w=400);
+  background-origin: padding-box;
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 120px;
+  justify-content: center;
+  line-height: 20px;
+  width: 200px;
+}
+.backgroundsettingsouterdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100px;
+  line-height: 20px;
+  padding-bottom: 4px;
+  width: 272px;
+}
+.backgroundheadingalign {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100px;
+  line-height: 20px;
+  padding-bottom: 4px;
+  width: 272px;
+}
+.backgroundheading {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  cursor: default;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 16px;
+  line-height: 16px;
+  margin: 12px 0px 4px 0px;
+  width: 272px;
+}
+.backgroundfinddiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 80px;
+  line-height: 20px;
+  width: 272px;
+}
+.backgroundImageslist {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  justify-content: space-between;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-block: 0px;
+  margin: 0px;
+  margin-inline: 0px;
+  padding: 0px 0px 8px 0px;
+  padding-inline-start: 0px;
+  width: 272px;
+}
+.backgroundImage {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: list-item;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: left;
+  width: 64px;
+}
+.Imageselectbutton {
+  background-position: 50% 50%;
+  background-size: cover;
+  font-weight: 500;
+  height: 40px;
+  justify-content: center;
+  line-height: 0px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  min-height: 0px;
+  outline-color: 0px none rgba(9, 30, 66, 0.06);
+  text-wrap: wrap;
+  width: 64px;
+}
+.backgroundcolorlist {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  justify-content: space-between;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-block: 0px;
+  margin: 0px;
+  margin-inline: 0px;
+  padding: 0px;
+  padding-inline-start: 0px;
+  width: 272px;
+}
+.backgroundcolor {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: list-item;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: left;
+  width: 40px;
+}
+.backgroundcolorselect {
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 0px none rgba(9, 30, 66, 0.06);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgba(9, 30, 66, 0.06);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  line-height: 0px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  min-height: 0px;
+  outline: 0px none rgba(9, 30, 66, 0.06);
+  width: 40px;
+}
+.boardtitleouterdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 54px;
+  line-height: 20px;
+  width: 272px;
+}
+.boardtitle {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  font-weight: 700;
+  height: 54px;
+  line-height: 16px;
+  margin: 12px 0px 4px 0px;
+  width: 272px;
+}
+.boardtitlecontentaligndiv {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  cursor: default;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 16px;
+  line-height: 16px;
+  width: 272px;
+}
+.asterisk {
+  color: rgb(201, 55, 44);
+  color-scheme: light;
+  cursor: default;
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+  height: auto;
+  line-height: 16px;
+  margin-left: 2px;
+  width: auto;
+}
+.titleinput {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: 0px solid rgb(23, 43, 77);
+  box-shadow: rgba(9, 30, 66, 0.14) 0px 0px 0px 2px inset;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: text;
+  display: block;
+  font-weight: 400;
+  height: 36px;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin: 2px 0px 0px 0px;
+  outline: 0px none rgb(23, 43, 77);
+  padding-block: 8px;
+  padding-inline: 12px;
+  padding: 8px 12px 12px 8px;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  width: 272px;
+  word-spacing: 0px;
+  -webkit-rtl-ordering: logical;
+  -webkit-border-image: none;
+}
+.titleinput:hover {
+  box-shadow: rgb(226, 72, 61) 0px 0px 0px 2px inset;
+}
+.requiredInfo {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+  height: 28px;
+  line-height: 20px;
+  width: 272px;
+}
+.requiredInfostyle {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 28px;
+  line-height: 20px;
+  margin-right: 8px;
+  width: 18.25px;
+}
+.requiredparastyle {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  margin-block: 8px;
+  margin-inline: 0px;
+  margin: 0px 0px 8px 0px;
+  width: 133.073px;
+}
+.visibilitytitle {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  cursor: default;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  height: 16px;
+  line-height: 16px;
+  margin: 12px 0px 4px 0px;
+  width: 272px;
+}
+.selectstyle {
+  align-items: center;
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  /*background-image: url(data:image/svg+xml,
+  <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" width=\"20px\" height=\"20px\" 
+  fill=\"%2344546f\" viewBox=\"0 0 20 20\">
+  <path d=\"M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 
+  1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 
+  4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s
+  -0.436-1.17 0-1.615z\" /></svg>);*/
+  background-position: calc(100% - 8px) 50%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 3px;
+  box-shadow: rgba(9, 30, 66, 0.14) 0px 0px 0px 2px inset;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: default;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  justify-content: space-between;
+  line-height: 20px;
+  min-height: 36px;
+  outline: 0px none rgb(23, 43, 77);
+  padding: 8px 12px 8px 12px;
+  position: relative;
+  transition-behavior: normal;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 272px;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+}
+.optionstyle {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: default;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  max-height: 100%;
+  max-width: calc(100% - 20px);
+  padding: 0px;
+  position: static;
+  width: 228px;
+}
+.selectsymbol {
+  align-items: center;
+  align-self: stretch;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: default;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  padding-right: 16px;
+  width: 16px;
+  -webkit-box-align: center;
+}
+.createboardbutton {
+  font-weight: 500;
+  width: 272px;
+  margin: 16px 0px 8px 0px;
+  align-items: center;
+  appearance: none;
+  border: 0px none rgba(9, 30, 66, 0.31);
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color-scheme: light;
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-block: 6px;
+  padding: 6px 12px 6px 12px;
+  padding-inline: 12px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgba(9, 30, 66, 0.31);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  white-space-collapse: collapse;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+/* Board styles */
+.boardcontainerouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 92px;
+  line-height: 20px;
+  width: 516px;
+}
+.boardcontainer {
+  align-items: center;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  column-gap: 4px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+  height: 68px;
+  line-height: 20px;
+  padding: 12px 16px 12px 16px;
+  position: relative;
+  row-gap: 4px;
+  width: 493px;
+}
+.boardspan {
+  align-items: flex-start;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  max-width: 100%;
+  min-height: 32px;
+  position: relative;
+  text-size-adjust: 100%;
+  width: 328.427px;
+}
+.boarddiv {
+  border-radius: 3px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: default;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  margin: 0px 0px 4px 0px;
+  max-width: 100%;
+  position: relative;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: 146.969px;
+}
+.boardinput {
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 3px;
+  border: 0px none rgb(23, 43, 77);
+  box-shadow: rgba(9, 30, 66, 0.14) 0px 0px 0px 2px inset;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: text;
+  display: none;
+  font-weight: 700;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin: 0px;
+  outline: 0px none rgb(23, 43, 77);
+  padding-block: 0px;
+  padding: 0px 10px 0px 10px;
+  padding-inline: 10px;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: nowrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow,
+    transition-timing-function ease;
+  white-space-collapse: collapse;
+  width: auto;
+  word-spacing: 0px;
+  -webkit-rtl-ordering: logical;
+  -webkit-border-image: none;
+}
+.boardheading {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  color: whitesmoke;
+  color-scheme: light;
+  cursor: default;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  height: 32px;
+  line-height: 32px;
+  margin-block: 0px 12px;
+  margin: 0px 0px 12px 0px;
+  margin-inline: 0px;
+  overflow: hidden;
+  padding: 0px 10px 0px 10px;
+  text-decoration-color: rgb(23, 43, 77);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  width: max-content;
+}
+.starbuttonouter {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 32px;
+  margin: 3px 0px 3px 0px;
+  overflow: visible;
+  padding-block: 6px;
+  padding: 6px;
+  padding-inline: 6px;
+  position: relative;
+  text-align: center;
+  text-decoration: 0px solid rgb(23, 43, 77);
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  white-space-collapse: collapse;
+  width: 32px;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.starbuttonspan {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.stariconspan {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.visibilitychangeouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  margin: 2px 4px 2px 4px;
+  max-height: 32px;
+  /*width: 32px;*/
+}
+.visibilitychangediv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 32px;
+  /* width: 32px;*/
+}
+.visibilitychangespan {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  margin-right: 0px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.visibilityspan {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+
+.boardnotifyouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  margin: 0px;
+  text-wrap: nowrap;
+  /*width: 105.458px;*/
+}
+.boardnotifyinner {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  text-wrap: nowrap;
+  /*width: 105.458px;*/
+}
+.boardnotifybutton {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  text-wrap: nowrap;
+  white-space-collapse: collapse;
+  /* width: 105.458px;*/
+}
+.boardselectbutton {
+  /* align-items: center;*/
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  margin: 0px 0px 6px 0px;
+  min-width: 32px;
+  overflow: visible;
+  padding: 10px;
+  padding-inline: 6px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(23, 43, 77);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  white-space-collapse: collapse;
+  /*width: 105.458px;*/
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.boardiconouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  margin-right: 8px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 20px;
+  word-spacing: 0px;
+}
+.boardiconinner {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.boardspan {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  /*display: block;*/
+  font-size: 14px;
+  font-weight: 500;
+  height: 20px;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+  /*width: 37.4583px;*/
+  word-spacing: 0px;
+}
+.mainboardouterdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: 407.333px;
+  line-height: 20px;
+  margin-top: 12px;
+  position: relative;
+  width: 900px;
+}
+.boardlistcontainer {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 0px;
+  line-height: 20px;
+  width: 900px;
+}
+.boardliststyle {
+  bottom: 0px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-weight: 400;
+  height: 391.333px;
+  left: 0px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-block-end: 8px;
+  margin-block-start: 0px;
+  margin-bottom: 8px;
+  margin-inline: 0px;
+  margin: 0px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0px 6px 8px 6px;
+  padding-inline-start: 6px;
+  position: absolute;
+  right: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 900px;
+}
+.boardlistcontent {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 391.333px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px 6px 6px 0px;
+  text-wrap: nowrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 476px;
+}
+.addlistbutton {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.24);
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 12px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 500;
+  height: 44px;
+  justify-content: flex-start;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px 0px 8px 0px;
+  overflow: visible;
+  padding-block: 12px;
+  padding: 12px;
+  padding-inline: 12px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(23, 43, 77);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 272px;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.addlisticonouter {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-right: 8px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.addlisticon {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 0px ;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+/* Main List Content Style */
+.listformcontainer {
+  align-self: flex-start;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 88px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px 6px 0px 6px;
+  text-wrap: nowrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 272px;
+}
+.boardmainlistform {
+  background-color: rgb(241, 242, 244);
+  border-radius: 12px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 88px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 8px;
+  text-wrap: nowrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 272px;
+}
+.boardlisttitle {
+  appearance: none;
+  background-attachment: scroll;
+  box-shadow: inset 0 0 2px #808080;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-clip: border-box;
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 4px;
+  /*box-shadow: none;*/
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  column-count: auto;
+  cursor: text;
+  display: block;
+  font-weight: 600;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  max-height: 256px;
+  min-height: 20px;
+  outline: 0px none rgb(23, 43, 77);
+  overflow-wrap: break-word;
+  overflow: hidden;
+  padding: 6px 12px 6px 12px;
+  resize: none;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  unicode-bidi: plaintext;
+  user-select: none;
+  white-space-collapse: preserve;
+  width: 256px;
+  word-spacing: 0px;
+  -webkit-rtl-ordering: logical;
+  -webkit-border-image: none;
+}
+.addtaskbuttondiv {
+  align-items: center;
+  border-radius: 4px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  column-gap: 4px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  justify-content: flex-start;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-top: 8px;
+  row-gap: 4px;
+  text-wrap: nowrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+}
+.addtaskbutton {
+  align-items: center;
+  appearance: none;
+  background-color: rgb(12, 102, 228);
+  border: 0px none rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  overflow: visible;
+  padding-block: 6px;
+  padding: 6px 12px 6px 12px;
+  padding-inline: 12px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 72.5312px;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.taskliststyle {
+  align-self: flex-start;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 353.333px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px 6px 0px 6px;
+  text-align: left;
+  text-wrap: nowrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 272px;
+}
+.closelistbutton {
+}
+.listtilestyle {
+  align-self: flex-start;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: 365.333px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0px 6px 0px 6px;
+  text-wrap: nowrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 720px;
+}
+/* list added styles */
+.innerTasklistouter {
+  align-self: start;
+  background-color: rgb(241, 242, 244);
+  border-radius: 12px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  box-sizing: border-box;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: flex;
+  flex-basis: 272px;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  justify-content: space-between;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  max-height: 100%;
+  padding-bottom: 8px;
+  position: relative;
+  scroll-margin: 8px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  vertical-align: top;
+  white-space-collapse: collapse;
+  width: 272px;
+}
+.tasktileheader {
+  align-items: flex-start;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  column-gap: 4px;
+  display: flex;
+  flex-basis: 0px;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
+  height: 38px;
+  justify-content: space-between;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 8px 8px 0px 8px;
+  position: relative;
+  row-gap: 0px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+}
+.taskheading {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  display: block;
+  flex-basis: min-content;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  min-height: 20px;
+  position: relative;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 220px;
+}
+.listheading {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  height: 20px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-block: 0px;
+  margin: 0px;
+  margin-inline: 0px;
+  overflow-wrap: anywhere;
+  overflow: hidden;
+  padding: 6px 12px 6px 8px;
+  text-align: left;
+  text-wrap: wrap;
+  unicode-bidi: isolate;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 200px;
+  z-index: 0;
+}
+
+.listheadingtextareafocused {
+  appearance: none;
+  background-attachment: scroll;
+  /*box-shadow: inset 0 0 2px #808080;*/
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-clip: border-box;
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 4px;
+  /*box-shadow: none;*/
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  column-count: auto;
+  cursor: text;
+  display: block;
+  font-weight: 600;
+  height: 32px;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  max-height: 220px;
+  min-height: 20px;
+  outline: 0px none rgb(23, 43, 77);
+  overflow-wrap: break-word;
+  overflow: hidden;
+  padding: 6px 12px 6px 12px;
+  resize: none;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  unicode-bidi: plaintext;
+  user-select: none;
+  white-space-collapse: preserve;
+  width: 220px;
+  word-spacing: 0px;
+  -webkit-rtl-ordering: logical;
+  -webkit-border-image: none;
+}
+textarea:focus {
+  box-shadow: rgb(56, 139, 255) 0px 0px 0px 2px inset;
+  background-color: whitesmoke;
+}
+.listmenubutton {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px none rgb(98, 111, 134);
+  border-radius: 8px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(98, 111, 134);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  overflow: visible;
+  padding-block: 8px;
+  padding: 8px;
+  padding-inline: 8px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(98, 111, 134);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 32px;
+  word-spacing: 0px;
+}
+.listmenuspanouter {
+  color: rgb(98, 111, 134);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.listmenuspaninner {
+  color: rgb(98, 111, 134);
+  color-scheme: light;
+  cursor: pointer;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.taskbodydivspacing {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 8px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-bottom: -2px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+  z-index: 10;
+}
+/* TaskList.js Styles */
+.taskcardliststyle {
+  align-items: center;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-block: 0px;
+  margin: 0px;
+  margin-inline: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 2px 4px 2px 4px;
+  padding-inline-start: 4px;
+  text-align: left;
+  text-wrap: wrap;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+  z-index: 1;
+}
+.taskaddcardouterdiv {
+  align-items: center;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  column-gap: 4px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  justify-content: space-between;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 8px 8px 0px 8px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+}
+.taskaddcardbutton {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px none rgb(68, 84, 111);
+  border-radius: 8px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: flex-start;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  overflow: visible;
+  padding-block: 6px;
+  padding: 6px 8px 6px 12px;
+  padding-inline-end: 12px;
+  padding-inline-start: 8px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(68, 84, 111);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 220px;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.taskaddname {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  letter-spacing: normal;
+  line-height: 14px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-right: 8px;
+  text-align: center;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 16px;
+  word-spacing: 0px;
+}
+.addcardtemplatebutton {
+  align-items: center;
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px none rgb(98, 111, 134);
+  border-radius: 8px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(98, 111, 134);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  overflow: visible;
+  padding-block: 8px;
+  padding: 8px;
+  padding-inline: 8px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(98, 111, 134);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 32px;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.addtaskformstyle {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  height: 96px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+}
+.addtasktitletextarea {
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  border: 0px none rgb(23, 43, 77);
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  column-count: auto;
+  cursor: text;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 56px;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  max-height: 160px;
+  min-height: 36px;
+  outline: 0px none rgb(23, 43, 77);
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 8px 12px 8px 12px;
+  resize: none;
+  text-align: start;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  unicode-bidi: plaintext;
+  user-select: none;
+  white-space-collapse: preserve;
+  width: 256px;
+  word-spacing: 0px;
+  -webkit-rtl-ordering: logical;
+  -webkit-border-image: none;
+}
+.addtasktitlebuttonouterdiv {
+  align-items: center;
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  column-gap: 4px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  justify-content: flex-start;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin-top: 8px;
+  row-gap: 4px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+}
+.addtasktitlebutton {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: center;
+  appearance: none;
+  background-color: rgb(12, 102, 228);
+  border: 0px none rgb(255, 255, 255);
+  border-radius: 3px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  color-scheme: light;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px;
+  overflow: visible;
+  padding-block: 6px;
+  padding: 6px 12px 6px 12px;
+  padding-inline: 12px;
+  position: relative;
+  text-align: center;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-indent: 0px;
+  text-rendering: auto;
+  text-shadow: none;
+  text-transform: none;
+  text-wrap: wrap;
+  transition-duration: 0.085s;
+  transition-property: background-color, border-color, box-shadow;
+  transition-timing-function: ease;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 72.5312px;
+  word-spacing: 0px;
+  -webkit-border-image: none;
+}
+.cardliststyle {
+  color: rgb(68, 84, 111);
+  color-scheme: light;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  padding-bottom: 8px;
+  row-gap: 8px;
+  scroll-margin: 80px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 256px;
+}
+.cardaligndiv {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 1px 2px 1px 2px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  min-height: 36px;
+  opacity: 1;
+  /* outline: 2px solid rgb(56, 139, 255);*/
+  position: relative;
+  scroll-margin: 8px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 250px;
+}
+.cardaligndivblue {
+  padding: 1px 2px 1px 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px,
+    rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 36px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  min-height: 36px;
+  opacity: 1;
+  resize: none;
+  outline: 1px solid rgb(56, 139, 255);
+  position: relative;
+  scroll-margin: 8px;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 250px;
+}
+.carddragdiv {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: flow-root;
+  font-size: 14px;
+  font-weight: 400;
+  height: 24px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  min-height: 24px;
+  padding: 8px 12px 4px 12px;
+  position: relative;
+  text-align: left;
+  text-size-adjust: 100%;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 232px;
+  z-index: 10;
+}
+.cardinputdivalign {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  column-gap: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  height: 0px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  max-width: 100%;
+  text-align: left;
+  text-wrap: wrap;
+  user-select: none;
+  white-space-collapse: collapse;
+  width: 0px;
+}
+.cardtaskname {
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: flow-root;
+  font-size: 14px;
+  font-weight: 400;
+  height: 60px;
+  line-height: 20px;
+  min-height: 24px;
+  padding: 8px 12px 4px 12px;
+  position: relative;
+  text-size-adjust: 100%;
+  width: 232px;
+  z-index: 10;
+}
