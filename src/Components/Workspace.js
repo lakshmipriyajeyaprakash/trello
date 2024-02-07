@@ -1,8 +1,20 @@
 import { useState, useEffect } from "react";
 import BoardModal from "./BoardModal";
+
+import {useSelector } from "react-redux";
 const Workspace = () => {
   /* Board Modal open and close function */
   const [isopendiv, setIsOpenDiv] = useState(false);
+  
+
+  /* Fetching BoardList Values */
+  const boardlist = useSelector((state) => state.boardList);
+  console.log(boardlist.length);
+  
+ /* const handleboardlist = () => {
+    
+}*/
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isopendiv) {
@@ -36,12 +48,24 @@ const Workspace = () => {
         <div className="workspacemenudiv"></div>
         <div className="addboardinfodiv">
           <ul className="workspacecreateboard">
+          {boardlist.map((boardvalue, index) => (
+                <li
+                  key={index}
+                  className="workspace1"
+                  style={{
+                    backgroundImage: boardvalue.boardbackground,
+                    backgroundColor: boardvalue.boardcolor,
+                  }}
+                >
+                  <h3>{boardvalue.boardtitledata}</h3>
+                </li>
+              ))}
             <li className="createboardtile">
               <div className="boardadddiv borderImage" onClick={openModal}>
                 <p>
                   <span>Create new board</span>
                 </p>
-                {isopendiv && <BoardModal closeModal={closeModal}></BoardModal>}
+                {isopendiv && <BoardModal closeModal={closeModal} /*handleboardlist={handleboardlist}*/></BoardModal>}
               </div>
             </li>
           </ul>

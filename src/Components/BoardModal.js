@@ -12,9 +12,13 @@ const BoardModal = ({ closeModal }) => {
   const formdata = useSelector((state) => state.formValues);
   const backgrounddata = useSelector((state) => state.background);
   const displaycolordata = useSelector((state) => state.displayColor);
+  
+  
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     dispatch(setFormValues(name, value));
+
   };
 
   /* Backgroud setting for Board */
@@ -34,6 +38,7 @@ const BoardModal = ({ closeModal }) => {
   /* Route to Board Page */
   const navigate = useNavigate();
   const handleSubmit = () => {
+   /* handleboardlist();*/
     navigate("/board-create");
   };
 

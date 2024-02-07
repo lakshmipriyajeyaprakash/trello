@@ -254,7 +254,7 @@
   height: 511.333px;
   line-height: 20px;
   outline: 0px none rgb(23, 43, 77);
-  overflow-y: auto;
+ /* overflow-y: auto;*/
   position: relative;
   width: 100%;
 }
@@ -266,24 +266,24 @@
   flex-direction: row;
   font-size: 14px;
   font-weight: 400;
-  height: 511.333px;
+  height: 100%;
   line-height: 20px;
-  overflow-y: auto;
+ /* overflow-y: auto;*/
   position: relative;
   width: 100%;
 }
 .menunavouter {
-  box-shadow: rgba(255, 255, 255, 0.16) 1px 0px 0px 0px;
+  /*box-shadow: rgba(255, 255, 255, 0.16) 1px 0px 0px 0px;*/
   color: rgb(23, 43, 77);
   color-scheme: light;
   display: block;
   font-size: 14px;
   font-weight: 400;
-  height: 511.333px;
+  height: 100%;
   line-height: 20px;
   min-height: 100%;
   position: relative;
-  width: 260px;
+  width: 180px;
   z-index: 5;
 }
 .menunavitemsouterdiv {
@@ -293,7 +293,7 @@
   display: block;
   font-size: 14px;
   font-weight: 400;
-  height: 511.333px;
+  height: 100%;
   left: 0px;
   line-height: 20px;
   position: absolute;
@@ -304,7 +304,7 @@
   transition-duration: 0.1s;
   transition-property: transform;
   transition-timing-function: ease-in;
-  width: 260px;
+  width: 180px;
 }
 .menunavitemsinnerdiv {
   backdrop-filter: blur(6px);
@@ -316,17 +316,28 @@
   flex-direction: column;
   font-size: 14px;
   font-weight: 400;
-  height: 511.333px;
+  height: 100%;
   line-height: 20px;
   min-height: 100%;
-  overflow-x: auto;
-  overflow-y: auto;
+ /* overflow-x: auto;
+  overflow-y: auto;*/
   transition-behavior: normal;
   transition-delay: 0s;
   transition-duration: 0.6s;
   transition-property: background-color;
   transition-timing-function: ease;
-  width: 260px;
+  width: 180px;
+}
+@media only screen and (max-width: 280px) {
+  .menunavitemsinnerdiv,.menunavouter,.menunavitemsouterdiv,.menunavitemsinnerdiv{
+    width:120px;
+  }
+  .menunavbar{
+    width: 150px;
+  }
+  .trelloworkspaceouter{
+    width: 100px;
+  }
 }
 .menunavbar {
   color: rgb(23, 43, 77);
@@ -336,15 +347,15 @@
   flex-direction: column;
   font-size: 14px;
   font-weight: 400;
-  height: 511.333px;
+  height: 100%;
   line-height: 20px;
-  overflow-x: auto;
-  overflow-y: auto;
-  width: 260px;
+ /* overflow-x: auto;
+  overflow-y: auto;*/
+  width: 180px;
 }
 .trelloworkspaceouter {
   align-items: center;
-  border: 0.666667px solid rgba(255, 255, 255, 0.16);
+  border: 0.666667px none rgba(255, 255, 255, 0.16);
   color: rgb(23, 43, 77);
   color-scheme: light;
   display: flex;
@@ -354,7 +365,7 @@
   line-height: 20px;
   min-height: 40px;
   padding: 8px 12px 12px 8px;
-  width: 236px;
+  width: 200px;
 }
 .menuanchor {
   background-color: rgba(0, 0, 0, 0);
@@ -513,12 +524,12 @@
   flex: 1 1 0%;
   font-size: 14px;
   font-weight: 400;
-  height: 398px;
+  height: 100%;
   line-height: 20px;
   overflow-x: hidden;
   overflow-y: auto;
   transform: matrix(1, 0, 0, 1, 0, 0);
-  width: 260px;
+  width: 180px;
 }
 .boardlistoptiondivouter {
   color: rgb(23, 43, 77);
@@ -529,7 +540,7 @@
   height: 96px;
   line-height: 20px;
   padding-top: 12px;
-  width: 260px;
+  width: 200px;
 }
 .boardlistoptiondivinner {
   color: rgb(23, 43, 77);
@@ -628,9 +639,9 @@
   display: block;
   font-size: 14px;
   font-weight: 400;
-  height: 325.365px;
+  height: 100%;
   line-height: 20px;
-  width: 518.354px;
+  width: 90%;
 }
 .workspaceheader {
   align-items: center;
@@ -644,7 +655,7 @@
   line-height: 24px;
   margin-block: 20px;
   margin: 20px 0px 0px 20px;
-  margin-inline: 10px;
+  margin-inline: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
@@ -657,11 +668,11 @@
   display: block;
   font-size: 14px;
   font-weight: 400;
-  height: 400px;
+  height: 100%;
   line-height: 20px;
-  max-width: 1266px;
+  max-width: 100%;
   padding: 0px 0px 20px 0px;
-  width: 452.354px;
+  width: 100%;
 }
 /*.workspacemenudiv {
   color: rgb(23, 43, 77);
@@ -680,12 +691,13 @@
 .addboardinfodiv {
   color: rgb(23, 43, 77);
   color-scheme: light;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   font-weight: 400;
   height: 224px;
   line-height: 20px;
-  width: 452.354px;
+  width: 1000px;
 }
 .workspacecreateboard {
   color: rgb(23, 43, 77);
@@ -702,10 +714,10 @@
   list-style-type: none;
   margin-block: 0px;
   margin: 0px;
-  margin-inline: 0px;
+  margin-inline: 10px;
   padding: 0px;
-  padding-inline-start: 0px;
-  width: 452.354px;
+  padding-inline-start: 10px;
+  width: max-content;
 }
 .createboardtile {
   box-sizing: border-box;
@@ -759,6 +771,61 @@
   vertical-align: middle;
   width: 206.177px;
 }
+.workspace1{
+  box-sizing: border-box;
+  color: rgb(23, 43, 77);
+  color-scheme: light;
+  cursor: pointer;
+  display: list-item;
+  font-size: 14px;
+  font-weight: 400;
+  height: 96px;
+  line-height: 20px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0px 0px 8px 8px;
+  padding: 0px;
+  position: relative;
+  text-align: left;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 222.177px;
+}
+@media only screen and (max-width: 540px) and (min-width: 300px) {
+  .workspacecreateboard{
+    margin-inline: 70px;
+    padding-inline-start: 70px;
+    flex-wrap: wrap;
+  }
+  .workspaceheader{
+    margin-inline: 75px;
+    padding-inline-start: 75px;
+  }
+  
+}
+@media only screen and (max-width: 1024px) and (min-width:550px) {
+  .workspacecreateboard{
+    margin-inline: 50px;
+    padding-inline-start: 50px;
+    flex-wrap: wrap;
+  }
+  .workspaceheader{
+    margin-inline: 55px;
+    padding-inline-start: 55px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .workspacecreateboard{
+    margin-inline: 45px;
+    padding-inline-start: 45px;
+    flex-wrap: wrap;
+  }
+  .workspaceheader{
+    margin-inline: 50px;
+    padding-inline-start: 50px;
+  }
+}
+
 /* Board Modal Styles */
 .boardmodal {
   color: rgb(23, 43, 77);
@@ -784,7 +851,7 @@
 .boardmodaldivouter {
   background-color: rgb(255, 255, 255);
   border-radius: 8px;
-  bottom: 4.33333px;
+  bottom: 50%;
   box-shadow: rgba(9, 30, 66, 0.15) 0px 8px 12px 0px,
     rgba(9, 30, 66, 0.31) 0px 0px 1px 0px;
   box-sizing: border-box;
@@ -794,7 +861,7 @@
   font-size: 14px;
   font-weight: 400;
   height: 500px;
-  left: 173px;
+  left: 100%;
   /*left: 412px;*/
   line-height: 20px;
   outline: 0px none rgb(23, 43, 77);
@@ -803,7 +870,7 @@
   right: 4px;
   /*top: 52px;*/
   /*top: 76px;*/
-  top: 5px;
+  top: 50%;
   width: 304px;
 }
 .modalheaderdiv {

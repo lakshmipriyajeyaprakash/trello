@@ -14,3 +14,13 @@ export const setFormValues = (name, value) => ({
     payload: displayColor,
   });
   
+  export const incrementId = () => ({
+    type: "SET_UNIQUE_ID",
+  })
+  export const addBoardList = (boardList) => ({
+    type: "SET_BOARD_LIST",
+    payload: boardList,
+  })
+  
+ 
+  

@@ -25,7 +25,6 @@ const Board = () => {
   const [cardCount, setCardCount] = useState(1);
   const [newListTitle, setNewListTitle] = useState("");
  
-
   const handleNewListChange = (e) => {
     setNewListTitle(e.target.value);
   };
@@ -42,7 +41,6 @@ const Board = () => {
       setLists([...lists]);
     }
   };
-
 
   const handleAddList = () => {
     setListCount((prevlistCount) => prevlistCount + 1);
